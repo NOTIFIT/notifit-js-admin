@@ -1,8 +1,16 @@
 var main = {}
 
 
+main.API_URL = 'http://notifit.io/api/Mobile/'
+
+main.user = {
+  accessToken: '',
+  authorization: ''
+}
+
+
 main.register = require('./methods/register')
-main.login = function(){}
+main.login = require('./methods/login')
 
 main.createProject = function(){}
 main.getProjects = function(){}

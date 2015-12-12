@@ -17,5 +17,8 @@
   ],
   "author": "Filip Chalupa <chalupa.filip@gmail.com>",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/Ofecka/notifit-js-admin#readme"
+  "homepage": "https://bitbucket.org/Ofecka/notifit-js-admin#readme",
+  "dependencies": {
+    "node-fetch": "^1.3.3"
+  }
 }

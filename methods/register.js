@@ -1,4 +1,5 @@
 module.exports = function(username, firstName, lastName, email, password){
+  var url = this.API_URL + 'Account/Register'
 
   return new Promise(function(resolve, reject){
     if (true) {
