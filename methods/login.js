@@ -12,8 +12,8 @@ module.exports = function(username, password){
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        username: username,
-        password: password
+        Username: username,
+        Password: password
       })
     }).then(function(response){
       if (response.status === 400) {
