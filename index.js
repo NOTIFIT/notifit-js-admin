@@ -14,20 +14,20 @@ main.register = require('./methods/register')
 main.login = require('./methods/login')
 main.logout = require('./methods/logout')
 
-main.createProject = function(){}
-main.getProjects = function(){}
-main.updateProject = function(){}
-main.uploadProjectImage = function(){}
+main.createProject = require('./methods/createProject')
+main.getProjects = require('./methods/getProjects')
+main.updateProject = require('./methods/updateProject')
+main.uploadProjectImage = require('./methods/uploadProjectImage')
 
-main.getApps = function(){}
+main.getApps = require('./methods/getApps')
 
-main.createAppleApp = function(){}
-main.updateAppleApp = function(){}
+main.createAppleApp = require('./methods/createAppleApp')
+main.updateAppleApp = require('./methods/updateAppleApp')
 
-main.getAppleKeyValues = function(){}
-main.uploadAppleAppImage = function(){}
-main.uploadAppleAppCert = function(){}
-main.getAppleAppKeyValues = function(){}
+main.getAppleKeyValues = require('./methods/getAppleKeyValues')
+main.uploadAppleAppImage = require('./methods/uploadAppleAppImage')
+main.uploadAppleAppCert = require('./methods/uploadAppleAppCert')
+main.getAppleAppKeyValues = require('./methods/getAppleAppKeyValues')
 
 
 module.exports = main
