@@ -26,11 +26,20 @@ sdk.register(user.username, user.firstname, user.lastname, user.email, user.pass
   console.log('Success: user logged in')
 
 
-  console.log('\nTest: create project')
+  console.log('\nTest: create projects')
   return sdk.createProject('My first project', 'BestCoders', 'Test project')
+}).then(function(){
+  return sdk.createProject('My Second project', 'SuperCoders', 'Another test project')
 }).then(function(result){
-  console.log('Success: project created')
+  console.log('Success: two projects created')
   project = result
+
+
+  console.log('\nTest: get all projects')
+  return sdk.getProjects()
+}).then(function(result){
+  console.log('Success: projects fetched')
+  console.log(result)
 
 
   console.log('\nTest: logout user')
