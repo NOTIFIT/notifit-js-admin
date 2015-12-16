@@ -22,9 +22,9 @@ module.exports = function(username, password){
         throw new Error('Bad status code.')
       }
       return response.json()
-    }).then(function(response){
-      self.user.accessToken = response.accessToken
-      self.user.authorization = response.Authorization
+    }).then(function(data){
+      self.user.accessToken = data.accessToken
+      self.user.authorization = data.Authorization
       self.user.loggedIn = true
       resolve('User logged in successfully.')
     }).catch(function(err){
