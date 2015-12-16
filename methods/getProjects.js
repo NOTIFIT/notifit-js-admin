@@ -14,7 +14,7 @@ module.exports = function(){
       }
     }).then(function(response){
       if (response.status !== 200) {
-        throw new Error('Bad status code.')
+        throw new Error('Bad status code ('+response.status+' but expected 200).')
       }
       return response.json()
     }).then(function(data){

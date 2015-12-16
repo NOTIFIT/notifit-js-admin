@@ -39,6 +39,12 @@ sdk.register(user.username, user.firstname, user.lastname, user.email, user.pass
   return sdk.getProjects()
 }).then(function(result){
   console.log('Success: projects fetched')
+
+
+  console.log('\nTest: get key and values for Apple application')
+  return sdk.getAppleKeyValues(project.Token)
+}).then(function(result){
+  console.log('Success: key and values fetched')
   console.log(result)
 
 

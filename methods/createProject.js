@@ -21,7 +21,7 @@ module.exports = function(name, company, purpose){
       if (response.status === 400) {
         throw new Error('Invalid format.')
       } else if (response.status !== 200) {
-        throw new Error('Bad status code.')
+        throw new Error('Bad status code ('+response.status+' but expected 200).')
       }
       return response.json()
     }).then(function(data){
