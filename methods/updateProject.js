@@ -6,7 +6,7 @@ module.exports = function(projectToken, name, company, purpose){
 
   return new Promise(function(resolve, reject){
     fetch(url, {
-      method: 'post',
+      method: 'put',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
