@@ -35,6 +35,13 @@ sdk.register(user.username, user.firstname, user.lastname, user.email, user.pass
   project = result
 
 
+  console.log('\nTest: update second project')
+  return sdk.updateProject(project.Token, project.Name + ' modified', project.Company, project.Purpose)
+}).then(function(result){
+  console.log('Success: second project updated')
+  project = result
+
+
   console.log('\nTest: get all projects')
   return sdk.getProjects()
 }).then(function(result){
