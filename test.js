@@ -12,6 +12,7 @@ user.email = 'test+'+user.key+'@example.com'
 user.password = 'SuperPassword-'+user.key
 
 var project = {}
+var appleApp = {}
 
 
 console.log('\nTest: register user')
@@ -46,6 +47,13 @@ sdk.register(user.username, user.firstname, user.lastname, user.email, user.pass
   return sdk.getProjects()
 }).then(function(result){
   console.log('Success: projects fetched')
+
+
+  console.log('\nTest: create Apple application')
+  return sdk.createAppleApp(project.Token, 'iOS super app', false)
+}).then(function(result){
+  console.log('Success: application created')
+  appleApp = result
 
 
   console.log('\nTest: get key and values for Apple application')
