@@ -9,7 +9,7 @@ main.user = {
   loggedIn: false
 }
 
-
+// Public methods
 main.register = require('./methods/register')
 main.login = require('./methods/login')
 main.logout = require('./methods/logout')
@@ -28,6 +28,9 @@ main.getAppleKeyValues = require('./methods/getAppleKeyValues')
 main.uploadAppleAppImage = require('./methods/uploadAppleAppImage')
 main.uploadAppleAppCert = require('./methods/uploadAppleAppCert')
 main.getAppleAppKeyValues = require('./methods/getAppleAppKeyValues')
+
+// Private methods
+main.getAuthHeader = require('./methods/getAuthHeader')
 
 
 module.exports = main

@@ -11,15 +11,27 @@ user.lastname = 'Last-'+user.key
 user.email = 'test+'+user.key+'@example.com'
 user.password = 'SuperPassword-'+user.key
 
+var project = {}
+
 
 console.log('\nTest: register user')
 sdk.register(user.username, user.firstname, user.lastname, user.email, user.password).then(function(result){
   console.log('Success: user created')
+  console.log('User: ' + user.username + ' : ' + user.password)
+
 
   console.log('\nTest: login user')
   return sdk.login(user.username, user.password)
 }).then(function(result){
   console.log('Success: user logged in')
+
+
+  console.log('\nTest: create project')
+  return sdk.createProject('My first project', 'BestCoders', 'Test project')
+}).then(function(result){
+  console.log('Success: project created')
+  project = result
+
 
   console.log('\nTest: logout user')
   return sdk.logout()
