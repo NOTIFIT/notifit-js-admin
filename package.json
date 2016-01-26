@@ -1,6 +1,6 @@
 {
   "name": "notifit-admin-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This Javascript package creates layer to communicate with NOTIFIT administration back-end.",
   "main": "index.js",
   "scripts": {
