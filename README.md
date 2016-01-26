@@ -42,6 +42,7 @@ sdk.createProject('My first project', 'BestCoders', 'Test project').then(functio
   console.error('Error: something went wrong')
   console.error(err)
 })
+```
 
 ### Update project
 
