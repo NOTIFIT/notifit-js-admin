@@ -17,7 +17,7 @@
   ],
   "author": "Filip Chalupa <chalupa.filip@gmail.com>",
   "license": "ISC",
-  "homepage": "https://github.com/NOTIFIT/notifit-js-admin",
+  "homepage": "http://notifit.io/",
   "dependencies": {
     "node-fetch": "^1.3.3"
   }
