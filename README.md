@@ -7,7 +7,7 @@ This Javascript package creates layer to communicate with NOTIFIT administration
 ### Require it first
 
 ```javascript
-var sdk = require('./index.js')
+var sdk = require('notifit-admin-js')
 ```
 
 ### Register user
