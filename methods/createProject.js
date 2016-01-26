@@ -5,9 +5,10 @@ var fetch = require('node-fetch')
  * @param {string} name
  * @param {string} company Company name
  * @param {string} purpose Purpose description
+ * @param {string} appType
  * @promise {object}
  */
-module.exports = function(name, company, purpose){
+module.exports = function(name, company, purpose, appType){
   var url = this.config.API_URL + 'Project'
   var self = this
 
@@ -22,7 +23,8 @@ module.exports = function(name, company, purpose){
       body: JSON.stringify({
         Name: name,
         Company: company,
-        Purpose: purpose
+        Purpose: purpose,
+        AppType: appType
       })
     }).then(function(response){
       if (response.status === 400) {

@@ -35,7 +35,7 @@ sdk.login('my_username', 'mySuperPass12345').then(function(result){
 ### Create project
 
 ```javascript
-sdk.createProject('My first project', 'BestCoders', 'Test project').then(function(result){
+sdk.createProject('My first project', 'BestCoders', 'Test project', 'My type').then(function(result){
   console.log('Project created')
   console.log(result) // created project data can be accessed here
 }).catch(function(err){

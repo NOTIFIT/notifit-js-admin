@@ -28,9 +28,9 @@ sdk.register(user.username, user.firstname, user.lastname, user.email, user.pass
 
 
   console.log('\nTest: create projects')
-  return sdk.createProject('My first project', 'BestCoders', 'Test project')
+  return sdk.createProject('My first project', 'BestCoders', 'Test project', 'My type')
 }).then(function(){
-  return sdk.createProject('My Second project', 'SuperCoders', 'Another test project')
+  return sdk.createProject('My Second project', 'SuperCoders', 'Another test project', 'My type')
 }).then(function(result){
   console.log('Success: two projects created')
   project = result
