@@ -1,5 +1,10 @@
 var fetch = require('node-fetch')
 
+/**
+ * Gets Apple keys and values
+ * @param {string} projectToken
+ * @promise {object}
+ */
 module.exports = function(projectToken){
   var url = this.config.API_URL + 'Project/'+projectToken+'/KeyValues'
   var self = this

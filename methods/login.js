@@ -1,5 +1,11 @@
 var fetch = require('node-fetch')
 
+/**
+ * Logs user in
+ * @param {string} username
+ * @param {string} password
+ * @promise {object}
+ */
 module.exports = function(username, password){
   var url = this.config.API_URL + 'Account/Login'
   var self = this

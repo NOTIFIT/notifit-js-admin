@@ -1,5 +1,14 @@
 var fetch = require('node-fetch')
 
+/**
+ * Registers new user and logs in
+ * @param {string} username
+ * @param {string} firstname
+ * @param {string} lastname
+ * @param {string} email
+ * @param {string} password
+ * @promise {object}
+ */
 module.exports = function(username, firstName, lastName, email, password){
   var url = this.config.API_URL + 'Account/Register'
   var self = this

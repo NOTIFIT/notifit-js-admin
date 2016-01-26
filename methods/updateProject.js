@@ -1,5 +1,13 @@
 var fetch = require('node-fetch')
 
+/**
+ * Updates project
+ * @param {string} projectToken
+ * @param {string} name
+ * @param {string} company Company name
+ * @param {string} purpose Purpose description
+ * @promise {object}
+ */
 module.exports = function(projectToken, name, company, purpose){
   var url = this.config.API_URL + 'Project/'+projectToken
   var self = this

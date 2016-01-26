@@ -1,5 +1,12 @@
 var fetch = require('node-fetch')
 
+/**
+ * Creates Apple application
+ * @param {string} projectToken
+ * @param {string} name
+ * @param {boolean} isProduction false for private apps
+ * @promise {object}
+ */
 module.exports = function(projectToken, name, isProduction){
   var url = this.config.API_URL + 'Project/'+projectToken+'/AppleApplication'
   var self = this

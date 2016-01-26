@@ -1,4 +1,4 @@
-module.exports = function(username, password){
+module.exports = function(){
   var self = this
 
   return new Promise(function(resolve, reject){
