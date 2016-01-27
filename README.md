@@ -12,6 +12,12 @@ This Javascript package creates layer to communicate with NOTIFIT administration
 npm install notifit-admin
 ```
 
+### You can test it
+```bash
+cd node_modules/notifit-admin
+npm test
+```
+
 ### Require it
 
 ```javascript
