@@ -4,7 +4,13 @@ This Javascript package creates layer to communicate with NOTIFIT administration
 
 ## How to use it
 
-### Require it first
+### Install it
+
+```bash
+npm install notifit-admin
+```
+
+### Require it
 
 ```javascript
 var sdk = require('notifit-admin-js')
