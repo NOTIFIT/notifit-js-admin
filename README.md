@@ -1,5 +1,7 @@
 # NOTIFIT admin Javascript SDK
 
+![NOTIFIT](http://i.imgur.com/uS9hya3.png?1 "NOTIFIT")
+
 This Javascript package creates layer to communicate with NOTIFIT administration back-end.
 
 ## How to use it
