@@ -13,7 +13,7 @@ npm install notifit-admin
 ### Require it
 
 ```javascript
-var sdk = require('notifit-admin-js')
+var sdk = require('notifit-admin')
 ```
 
 ### Register user
